@@ -35,7 +35,7 @@ directorio = []
 
 for i, key in enumerate(diccionario):
     #print(i, key)
-    directorio.append(paginas(sorted(diccionario[key])))
+    directorio.append(paginas(sorted(diccionario[key]), corpus = 0, pais = "13", ano1 = 1980, ano2 = 2004, medio = "0&medio=1&medio=2"))
 
 #Crea un diccionario de diccionarios con las páginas y las formas verbales
 
@@ -82,4 +82,4 @@ with open("fichas.csv", 'w+', newline='', encoding = 'utf-16le') as csvfile:
             for m in muestra:
                 salida.writerow(m)
 
-print("Cómo citar este software: Granados, Daniel. 2019. Amaimon, software para la recuperación automática de datos. Versión: 2.0. Lenguaje: Python. México. https://github.com/gengisdan/fichador_amaimon")
+print("CÓMO CITAR ESTE SOFTWARE: Granados, Daniel. 2019. Amaimon, software para la recuperación automática de datos. Versión: 2.0. Lenguaje: Python. México. https://github.com/gengisdan/fichador_amaimon")
