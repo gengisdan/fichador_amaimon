@@ -23,7 +23,7 @@ Con los paradigmas verbales se crea un diccionario que vincula un lema con un pa
 
 Posteriormente, cada palabra flexionada es buscada en el corpus. Con el objetivo de que la búsqueda sea completa, se buscan tanto las formas con minúsculas (pensé) como aquellas con la primera letra capitalizada (Pensé).
 
-Dado que el programa fue creado en el marco del proyecto de la Base de Datos de Construcciones Verbales en el Español Mexicano (UNAM / IIFL), el programa busca de manera predeterminada los datos en el CORDE, solo para México, en el periodo comprendido entre 1980 y 2004, y tomando en cuenta solo medios impresos: Libros, Revistas y Periódicos. Estos parámetros pueden ser modificados como parte de la función Páginas.
+Dado que el programa fue creado en el marco del proyecto de la Base de Datos de Construcciones Verbales en el Español Mexicano (UNAM / IIFL), el programa busca de manera predeterminada los datos en el CREA, solo para México, en el periodo comprendido entre 1980 y 2004, y tomando en cuenta solo medios impresos: Libros, Revistas y Periódicos. Estos parámetros pueden ser modificados como parte de la función Páginas.
 
 Si la búsqueda arroja más de 1000 datos, estos son filtrados con el filtro DOCUMENTOS que ofrece la RAE.
 
