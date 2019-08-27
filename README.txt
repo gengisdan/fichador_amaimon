@@ -40,12 +40,12 @@ La aleatorización tiene como objetivo que el investigador pueda trabajar solo c
 PARÁMETROS DE LA FUNCIÓN PÁGINAS
 
 Valores posibles en Corpus:
-
+corpus = 
 "0"> CREA
 "1"> CORDE
 
 Valores posibles en Medio:
-
+medio = 
 "1000">(Todos)
 "0"> Libros
 "1"> Periódicos
@@ -54,7 +54,7 @@ Valores posibles en Medio:
 "4"> Oral
 
 Valores posibles en País:
-
+pais = 
 "1000">(Todos)
 "0">Argentina
 "1">Bolivia
@@ -88,9 +88,15 @@ Para hacer búsquedas con múltiples valores en País o Medio (SIEMPRE ENTRECOMI
 
 medio = "0&medio=1&medio=2" > Selecciona los valores 0 (Libros), 1 (Periódicos) y 2 (Revistas) en Medio.
 
+Los parámetros de año (ano1 y ano2) son AMBOS NECESARIOS, y deben corresponder con el tipo de corpus. CORDE: desde el s. XII hasta el año 1974. CREA: desde 1975 hasta 2004.
+
+Para recuperar ejemplos de un lapso diferente al comprendido entre 1980 y 2004:
+
+ano1 = 1700, ano2 = 1850 
+
 Para recuperar ejemplos de UN SOLO AÑO en específico:
 
-ano1 = 1982, ano2 = ""
+ano1 = 1982, ano2 = "" 
 
 Para NO seleccionar NINGÚN AÑO en específico ambos valores deben aparecer como:
 
