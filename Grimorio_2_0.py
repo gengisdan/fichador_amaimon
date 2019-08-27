@@ -10,7 +10,7 @@
 ## Novedad: Cuando son más de mil, los filtra por documento.
 ## Novedad: Filtros integrados: México, 1980-2004, Libros, Periódicos y Revistas
 
-def paginas(lista, corpus = 0, pais = 13, ano1 = 1980, ano2 = 2004, medio = "0&medio=1&medio=2"):
+def paginas(lista, corpus, pais, ano1, ano2, medio):
     #Corpus 0 = CREA
     #Corpus 1 = CORDE
     
