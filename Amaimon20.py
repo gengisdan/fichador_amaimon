@@ -82,4 +82,4 @@ with open("fichas.csv", 'w+', newline='', encoding = 'utf-16le') as csvfile:
             for m in muestra:
                 salida.writerow(m)
 
-print("CÓMO CITAR ESTE SOFTWARE: Granados, Daniel. 2019. Amaimon, software para la recuperación automática de datos. Versión: 2.0. Lenguaje: Python. México. https://github.com/gengisdan/fichador_amaimon")
+print("CÓMO CITAR ESTE SOFTWARE: Granados, Daniel. 2019. Amaimon, software para la recuperación automática de datos. Versión: 2.0. Lenguaje: Python. México. https://github.com/gengisdan/fichador-amaimon")
