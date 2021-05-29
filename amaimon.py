@@ -240,7 +240,7 @@ for i, key in enumerate(lema_forma):
 
 with open("fichas.csv", 'w+', newline='', encoding = 'utf-16le') as csvfile:
     salida = csv.writer(csvfile, delimiter=',',quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    salida.writerow(["Lexema", "Forma", "Contexto", "Ejemplo", "Año", "Autor", "Título", "País", "Tema", "Publicación"])
+    salida.writerow(["Lema", "Forma", "Contexto", "Ejemplo", "Año", "Autor", "Título", "País", "Tema", "Publicación"])
 
     for dato in datos:
         salida.writerow(dato)
