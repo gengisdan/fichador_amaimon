@@ -1,24 +1,25 @@
 # fichador_amaimon
 
-AMAIMON 3
+AMAIMON 3.1.3
 Software para la recuperación automática de datos.
 
 El objetivo de este programa es recuperar fichas de manera automática desde los corpus de la RAE: el CORDE y el CREA. El proceso se lleva a cabo a partir de elementos de búsqueda introducidos por el usuario en un diccionario que tiene la siguiente estructura:
 
 {"lema" : ["forma 1", "forma 2"]}
 
-"lema" corresponde a la forma lemática de la búsqueda, por ejemplo, "perro"
-Dentro de la lista del value, se colocan las diferentes variantes del lema que quieren buscarse, por ejemplo, "perro", "perrito", "perra"...
+"lema" corresponde a la forma lemática de la búsqueda, por ejemplo, "perro".
+Dentro de la lista del value, se colocan las diferentes variantes del lema que quieren buscarse, por ejemplo, "perro", "perrito", "perra".
+
+El "lema" también se puede utilizar para designar alguna categoría abstracta: "Adverbio", y cada elemento de la lista del value puede ser una instancia de esa categoría: "ahora", "antes", "después".
 
 Amaimon recupera un contexto específico (10 palabras antes y después del acierto), que permite identificar rápidamente la forma en su contexto inmediato, y un contexto amplio (50 palabras antes y después del acierto), que provee de texto suficiente para interpretar el funcionamiento de la forma adecuadamente. La cantidad de palabras antes y después del acierto en cualquiera de los contextos puede ser modificada por el usuario.
 
 Además del contexto, el programa recolecta toda la meta-información que ofrece el corpus: año de publicación, autor, título, país, tema y publicación.
 
-Amaimon fue creado con el propósito de facilitar la tarea de recolección de datos a los lingüistas, para que puedan dedicar más tiempo al análisis. Asismimo, permite recuperar grandes cantidades de datos rápidamente.
+Amaimon fue creado con el propósito de facilitar la tarea de recolección de datos a los lingüistas, para que puedan dedicar más tiempo al análisis. Asismimo, permite recuperar grandes cantidades de datos rápidamente, obteniendo muestras aleatorias.
 
 Requerimientos:
 Selenium
-Requests
 Chrome Driver
 
 PARÁMETROS DE LA FUNCIÓN PÁGINAS
@@ -67,10 +68,6 @@ Los valores numéricos se pueden introducir solos o entre comillas:
 
 pais = 0
 pais = "0"
-
-Para hacer búsquedas con múltiples valores (SIEMPRE ENTRECOMILLADO):
-
-medio = "0&medio=1&medio=2" > Selecciona los valores 0 (Libros), 1 (Periódicos) y 2 (Revistas) en Medio.
 
 Los parámetros de año (ano1 y ano2) son AMBOS NECESARIOS, y deben corresponder con el tipo de corpus. CORDE: desde el s. XII hasta el año 1974. CREA: desde 1975 hasta 2004.
 
